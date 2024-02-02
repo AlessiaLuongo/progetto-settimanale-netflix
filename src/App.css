@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  color: #ffffff;
+  background-color: #101010;
 }
 
 .App-logo {
@@ -35,4 +36,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+main {
+  padding-right: 3em;
+  padding-left: 3em;
+}
+
+ul li {
+  color: rgb(87, 87, 87);
+  list-style: none;
+}
+i {
+  color: rgb(87, 87, 87);
+  font-size: 1.5em;
+}
+
+.service-button {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+p {
+  color: rgb(87, 87, 87);
 }
