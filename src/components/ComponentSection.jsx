@@ -42,17 +42,12 @@ class ComponentSection extends Component {
       <Row className="g-0 mb-5">
         {this.state.isLoading && <Spinner variant="success"></Spinner>}
 
-        {this.state.film.length === 0 &&
-        !this.state.isLoading &&
-        !this.state.isError ? (
+        {!this.state.isLoading && this.state.isError ? (
           <Alert variant="warning">Nessun film trovato</Alert>
         ) : (
           this.state.film
             .slice(0, 6)
             .map((film) => <SingleCard film={film} key={film.imdbID} />)
-        )}
-        {this.state.isError && (
-          <Alert variant="danger">Si è verificato un problema</Alert>
         )}
       </Row>
     );
