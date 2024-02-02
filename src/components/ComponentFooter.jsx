@@ -7,7 +7,7 @@ const ComponentFooter = () => {
   return (
     <Container className="d-flex justify-content-center">
       <Row className=" justify-content-center">
-        <Row className="justify-content-center mb-5">
+        <Row className="justify-content-evenly mb-5">
           <Col xs={2} lg={1}>
             <i className="bi bi-facebook"></i>
           </Col>
@@ -21,7 +21,7 @@ const ComponentFooter = () => {
             <i className="bi bi-youtube"></i>
           </Col>
         </Row>
-        <Row className="justify-content-around">
+        <Row className="justify-content-evenly">
           <Col xs={4} md={4} lg={2}>
             <ul className="p-0">
               <li>An item</li>

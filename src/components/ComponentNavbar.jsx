@@ -8,8 +8,8 @@ const ComponentNavbar = () => {
       <Navbar.Brand>
         <img
           alt="logo"
-          width="130px"
-          height="50px"
+          width="150px"
+          height="60px"
           src="https://images.ctfassets.net/y2ske730sjqp/1aONibCke6niZhgPxuiilC/2c401b05a07288746ddf3bd3943fbc76/BrandAssets_Logos_01-Wordmark.jpg?w=940"
           className="d-inline-block align-top"
         />
@@ -52,7 +52,7 @@ const ComponentNavbar = () => {
           <Nav.Link eventKey={2} href="#memes">
             <img
               src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/84c20033850498.56ba69ac290ea.png"
-              width="30px"
+              width="40px"
               height="30px"
               alt="logo"
               className="img-fluid bg-primary"
