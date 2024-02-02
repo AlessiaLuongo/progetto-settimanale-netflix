@@ -21,7 +21,7 @@ function App() {
         <h3> Film consigliati </h3>
         <ComponentSection cerca="top"></ComponentSection>
         <h3> Film piaciuti </h3>
-        <ComponentSection cerca="harry"></ComponentSection>
+        <ComponentSection cerca="Harry Potter"></ComponentSection>
       </main>
       <footer>
         <ComponentFooter></ComponentFooter>
