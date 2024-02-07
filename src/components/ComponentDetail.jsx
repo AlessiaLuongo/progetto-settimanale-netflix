@@ -49,6 +49,7 @@ const ComponentDetail = () => {
                   {detailFilm.Actors}
                 </Card.Text>
                 <Card.Text className="text-center">{detailFilm.Year}</Card.Text>
+                <Card.Text className="text-center">{detailFilm.Plot}</Card.Text>
               </Card.Body>
             </Card>
           )}
