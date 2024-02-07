@@ -1,6 +1,6 @@
 import Navbar from "react-bootstrap/Navbar";
-
 import Nav from "react-bootstrap/Nav";
+import { Link } from "react-router-dom";
 
 const ComponentNavbar = () => {
   return (
@@ -17,27 +17,27 @@ const ComponentNavbar = () => {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link style={{ color: "white" }} href="#">
+          <Link className="nav-link" style={{ color: "white" }} to="/">
             Home
-          </Nav.Link>
-          <Nav.Link style={{ color: "white" }} href="#">
+          </Link>
+          <Link className="nav-link" style={{ color: "white" }} to="/">
             TV Shows
-          </Nav.Link>
-          <Nav.Link style={{ color: "white" }} href="#">
+          </Link>
+          <Link className="nav-link" style={{ color: "white" }} to="/">
             Movies
-          </Nav.Link>
-          <Nav.Link style={{ color: "white" }} href="#">
+          </Link>
+          <Link className="nav-link" style={{ color: "white" }} to="/">
             Recently Addes
-          </Nav.Link>
-          <Nav.Link style={{ color: "white" }} href="#">
+          </Link>
+          <Link className="nav-link" style={{ color: "white" }} to="/">
             My List
-          </Nav.Link>
+          </Link>
         </Nav>
         <Nav>
           <Nav.Link href="#">
             <i className="bi bi-search" style={{ color: "white" }}></i>
           </Nav.Link>
-          <Nav.Link href="#">
+          <Link className="nav-link" style={{ color: "white" }} to="/profile">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
               width="40px"
@@ -45,7 +45,7 @@ const ComponentNavbar = () => {
               alt="logo"
               className="img-fluid bg-primary"
             />
-          </Nav.Link>
+          </Link>
           <Nav.Link href="#">
             <i className="bi bi-bell" style={{ color: "white" }}></i>
           </Nav.Link>
