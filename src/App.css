@@ -25,7 +25,7 @@ p {
   color: rgb(87, 87, 87);
 }
 
-#basic-nav-dropdown {
+.basic-nav-dropdown {
   border: 1px solid#ffffff;
   width: 130px;
   height: 45px;

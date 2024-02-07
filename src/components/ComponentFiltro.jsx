@@ -11,7 +11,7 @@ const ComponentFiltro = () => {
           <h1>TV Shows</h1>
         </Col>
         <Col className="d-flex align-items-center">
-          <NavDropdown title="Categories" id="basic-nav-dropdown">
+          <NavDropdown title="Categories" className="basic-nav-dropdown">
             <NavDropdown.Item href="#action/3.2">Action</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.3">Thriller</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.4">Drama</NavDropdown.Item>
