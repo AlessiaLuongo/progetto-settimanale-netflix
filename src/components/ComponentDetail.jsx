@@ -5,6 +5,7 @@ import Card from "react-bootstrap/Card";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { useState } from "react";
+import ComponentComments from "./ComponentComments";
 
 const ComponentDetail = () => {
   const [detailFilm, setDetailFilm] = useState(null);
@@ -32,12 +33,11 @@ const ComponentDetail = () => {
   console.log(detailFilm);
   return (
     <Container>
-      <Row>
-        <Col xs={2} md={4} lg={4}>
+      <Row className="justify-content-around">
+        <Col xs={2} md={4} lg={4} className="d-flex">
           {detailFilm && (
-            <Card className="w-100 ">
+            <Card className="w-50 ">
               <Card.Img variant="top" src={detailFilm.Poster} />
-
               <Card.Body className="d-flex flex-column ">
                 <Card.Title className="text-center">
                   {detailFilm.Title}
@@ -52,6 +52,7 @@ const ComponentDetail = () => {
               </Card.Body>
             </Card>
           )}
+          <ComponentComments />
         </Col>
       </Row>
     </Container>
