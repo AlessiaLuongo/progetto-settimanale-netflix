@@ -11,7 +11,6 @@ const ComponentDetail = () => {
   const [detailFilm, setDetailFilm] = useState(null);
 
   const params = useParams();
-  console.log(params.filmId);
 
   const detailFilmFetch = () => {
     fetch("http://www.omdbapi.com/?apikey=107edba2&s&i=" + params.filmId)
@@ -30,7 +29,7 @@ const ComponentDetail = () => {
       detailFilmFetch();
     }
   }, [params.filmId]);
-  console.log(detailFilm);
+
   return (
     <Container>
       <Row className="justify-content-around">
